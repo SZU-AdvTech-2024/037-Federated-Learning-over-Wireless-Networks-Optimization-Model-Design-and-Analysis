@@ -1,0 +1,11 @@
+@inproceedings{REPO037,
+    author = "Tran, Nguyen H. and Bao, Wei and Zomaya, Albert and Nguyen, Minh N. H. and Hong, Choong Seon",
+    booktitle = "IEEE INFOCOM 2019 - IEEE Conference on Computer Communications",
+    doi = "10.1109/INFOCOM.2019.8737464",
+    keywords = "Data models;Computational modeling;Machine learning;Wireless networks;Energy consumption;Training;Distributed Machine Learning over Wireless Networks;Federated Learning;optimization Decomposition",
+    number = "",
+    pages = "1387-1395",
+    title = "{Federated Learning over Wireless Networks: Optimization Model Design and Analysis}",
+    volume = "",
+    year = "2019"
+}
