@@ -1,0 +1,87 @@
+### FSVRG ###
+Weight Size: 814120  bytes
+Weight & Grad Size: 1628240  bytes
+Each user Training size: 940800.0  bytes ~ 940KB
+Total Training size: 47040000.0  bytes ~ 47MB
+
+Local 10  =>  227 / 227
+Local 20  =>  121 / 121
+Local 30  =>  86 / 86
+Local 40  =>  69 / 69
+Local 50  =>  59 / 59
+Local 60  =>  51 / 51
+Local 70  =>  34 / 34
+Local 80  =>  30 / 30
+Local 90  =>  28 / 27
+local 100 =>  25 / 23
+local 110 =>  23 / 21
+local 120 =>  20 / 20
+local 130 =>  19 / 18
+--
+local 150 =>  17 / 17
+local 170 =>  15 / 15
+
+
+### FedProx ###  89%
+Local 5   =>  152
+Local 10  =>  48
+Local 15  =>  20
+Local 20  =>  12
+Local 25  =>  8
+Local 30  =>  6
+Local 35  =>  5
+Local 40  =>  5
+
+
+### FedAvg ###   89%
+Local 5   =>  141
+Local 10  =>  39
+Local 15  =>  20
+Local 20  =>  12
+Local 25  =>  8
+Local 30  =>  6
+Local 35  =>  5
+Local 40  =>  4
+
+####################
+Unbalanced Dataset
+####################
+
+### FedProx ###  89%
+Local 5   =>  
+Local 10  =>  
+Local 15  =>  
+Local 20  =>  
+Local 25  =>  34
+Local 30  =>  
+Local 35  =>  
+Local 40  =>  
+Local 45  =>  
+Local 50  =>  
+
+### FedProx (weighted) ###  89%
+Local 5   =>  
+Local 10  =>  
+Local 15  =>  
+Local 20  =>  
+Local 25  =>  32
+Local 30  =>  
+Local 35  =>  
+Local 40  => 
+Local 45  =>  
+Local 50  =>   
+
+### FedAvg ###   89%
+Local 5   =>  
+Local 10  =>  
+Local 15  =>  
+Local 20  =>  
+Local 25  =>  
+Local 30  =>  
+Local 35  =>  34 
+Local 40  =>  
+
+
+
+
+

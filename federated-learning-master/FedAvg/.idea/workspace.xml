@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e1877d7-28fe-43bf-aebb-14d255bc9405" name="Default Changelist" comment="add a learning rate trick to get rid of local optimum">
+      <change beforePath="$PROJECT_DIR$/../../.idea/OnDevAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/OnDevAI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figs/3 algs/avg_acc.png" beforeDir="false" afterPath="$PROJECT_DIR$/Figs/3 algs/avg_acc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figs/3 algs/avg_loss.png" beforeDir="false" afterPath="$PROJECT_DIR$/Figs/3 algs/avg_loss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figs/3 algs/glob_acc.png" beforeDir="false" afterPath="$PROJECT_DIR$/Figs/3 algs/glob_acc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figs/3 algs/glob_loss.png" beforeDir="false" afterPath="$PROJECT_DIR$/Figs/3 algs/glob_loss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_fed.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_fed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/../save/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../save/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../save/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../save/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../save/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../save/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../linearFSVGR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../linearFSVGR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../linearFSVGR/venv/main_fed.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../linearFSVGR/venv/main_fed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../linearFSVGR/venv/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../linearFSVGR/venv/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../linearFSVGR/venv/sample_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../linearFSVGR/venv/sample_data.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main_fed.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="417" lean-forward="true" selection-start-line="417" selection-end-line="417" />
+              <folding>
+                <element signature="e#69#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sampling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+              <folding>
+                <element signature="e#70#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FedNets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="954">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+              <folding>
+                <element signature="e#69#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Update.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+              <folding>
+                <element signature="e#69#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/averaging.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <folding>
+                <element signature="e#69#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backup2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4914">
+              <caret line="273" column="42" selection-start-line="273" selection-start-column="42" selection-end-line="273" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>average_FSVRG_weights</find>
+      <find>copy</find>
+      <find>dataset</find>
+      <find>gpu</find>
+      <find>update_FedProx_weights</find>
+      <find>fsvgr</find>
+      <find>self.lr *</find>
+      <find>mlp</find>
+      <find>users train</find>
+      <find>Users train average loss</find>
+      <find>global test</find>
+      <find>test global</find>
+      <find>random</find>
+      <find>rand</find>
+      <find>fsvrg</find>
+      <find>self.tb</find>
+      <find>ag_scalar</find>
+      <find>w_locals</find>
+      <find>user_grads</find>
+      <find>update_FSVGR_weights</find>
+      <find>dict_users</find>
+      <find>fv</find>
+      <find>tqdm</find>
+      <find>total_size</find>
+      <find>limit</find>
+      <find>300</find>
+      <find>local_bs</find>
+      <find>num_users</find>
+      <find>weighted_average_weights</find>
+      <find>acc_test</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ArkShi &lt;fshi3427@uni.sydney.edu.au.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main_nn.py" />
+        <option value="$PROJECT_DIR$/options.py" />
+        <option value="D:/Programs/Anaconda3/Lib/site-packages/torchvision/datasets/mnist.py" />
+        <option value="$PROJECT_DIR$/backup.py" />
+        <option value="$PROJECT_DIR$/backup3.py" />
+        <option value="$PROJECT_DIR$/backup2.py" />
+        <option value="$PROJECT_DIR$/FedNets.py" />
+        <option value="$PROJECT_DIR$/sampling.py" />
+        <option value="$PROJECT_DIR$/averaging.py" />
+        <option value="$PROJECT_DIR$/Update.py" />
+        <option value="$PROJECT_DIR$/main_fed.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FedAvg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FedAvg" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main_fed">
+    <configuration name="backup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FedAvg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backup2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FedAvg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backup2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backup3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FedAvg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backup3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_fed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="FedAvg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_fed.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in main_nn.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="FedAvg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/main_nn.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main_fed" />
+      <item itemvalue="Python.backup" />
+      <item itemvalue="Python.backup2" />
+      <item itemvalue="Python.backup3" />
+      <item itemvalue="Python tests.pytest in main_nn.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.backup2" />
+        <item itemvalue="Python.backup3" />
+        <item itemvalue="Python.backup" />
+        <item itemvalue="Python tests.pytest in main_nn.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e1877d7-28fe-43bf-aebb-14d255bc9405" name="Default Changelist" comment="" />
+      <created>1544438050683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544438050683</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add comments for codes and fix GPU option">
+      <created>1548311628879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548311628879</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add a learning rate trick to get rid of local optimum">
+      <created>1548406325348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548406325348</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tune parameters for fsvgr">
+      <created>1548657173025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548657173025</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tune parameters">
+      <created>1548671004935</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548671004935</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update parameters &amp; Recalculate ACC/Loss &amp; Clean codes">
+      <created>1551359240227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551359240227</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add figs and update code">
+      <created>1557325777867</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557325777867</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_main_nn_py - 2018.12.10 at 19h 36m 56s.xml">
+      <configuration name="pytest in main_nn.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_main_nn_py - 2018.12.10 at 19h 52m 14s.xml">
+      <configuration name="pytest in main_nn.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_main_nn_py - 2018.12.10 at 19h 57m 15s.xml">
+      <configuration name="pytest in main_nn.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22021858" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49945354" visible="true" weight="0.3529412" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23196448" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32963374" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32963374" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50054646" side_tool="true" weight="0.6037736" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add comments for codes and fix GPU option" />
+    <MESSAGE value="add a learning rate trick to get rid of local optimum" />
+    <MESSAGE value="Tune parameters for fsvgr" />
+    <MESSAGE value="tune parameters" />
+    <MESSAGE value="Update parameters &amp; Recalculate ACC/Loss &amp; Clean codes" />
+    <MESSAGE value="Add figs and update code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add figs and update code" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://D:/Programs/Anaconda3/Lib/site-packages/torchvision/datasets/mnist.py" />
+    <entry file="file://D:/Programs/Anaconda3/Lib/site-packages/torch/utils/data/dataloader.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/tensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="449" selection-start-line="449" selection-end-line="449" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tqdm/_tqdm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="688" column="8" selection-start-line="688" selection-start-column="8" selection-end-line="688" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="887">
+          <caret line="975" column="8" selection-start-line="975" selection-start-column="8" selection-end-line="975" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5274">
+          <caret line="293" column="30" selection-start-line="293" selection-start-column="30" selection-end-line="293" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/utils/data/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1535">
+          <caret line="804" selection-start-line="804" selection-end-line="804" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/utils/data/sampler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2664">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rs_avg_lossfedavg_20.png" />
+    <entry file="file://$PROJECT_DIR$/rs_glob_accfedavg_20.png" />
+    <entry file="file://$PROJECT_DIR$/rs_glob_lossfedavg_20.png" />
+    <entry file="file://$PROJECT_DIR$/rs_avg_acc_fedavg_20.png" />
+    <entry file="file://$PROJECT_DIR$/main_fed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="417" lean-forward="true" selection-start-line="417" selection-end-line="417" />
+          <folding>
+            <element signature="e#69#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+          <folding>
+            <element signature="e#70#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FedNets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding>
+            <element signature="e#69#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding>
+            <element signature="e#69#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/averaging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="e#69#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4914">
+          <caret line="273" column="42" selection-start-line="273" selection-start-column="42" selection-end-line="273" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
